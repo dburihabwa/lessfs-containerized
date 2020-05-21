@@ -15,5 +15,7 @@ docker run --detach=true \
 ```
 Or in interactive mode
 ```bash
-docker run --rm --interactive --tty --device /dev/fuse --cap-add SYS_ADMIN --security-opt apparmor:unconfined lessfs
+docker run --interactive --tty \
+           --device /dev/fuse --cap-add SYS_ADMIN --security-opt apparmor:unconfined \
+           lessfs
 ```
